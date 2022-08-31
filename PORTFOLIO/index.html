@@ -1,0 +1,583 @@
+<!DOCKTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link href='https://css.gg/home.css' rel='stylesheet'>
+    <link href='https://css.gg/user.css' rel='stylesheet'>
+    <link href='https://css.gg/profile.css' rel='stylesheet'>
+    <link href='https://css.gg/tab.css' rel='stylesheet'>
+    <link href='https://css.gg/mail.css' rel='stylesheet'>
+    <link href='https://css.gg/list.css' rel='stylesheet'>
+    <link href='https://css.gg/smartphone.css' rel='stylesheet'>
+    <link href='https://css.gg/browser.css' rel='stylesheet'>
+    <link href='https://css.gg/screen.css' rel='stylesheet'>
+    <link href='https://css.gg/phone.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+  
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script async src="JavaScript/javasc.JS"></script>
+    <script async src="JavaScript/linear_prog.JS"></script>
+    <script async src="JavaScript/counter.JS"></script>
+    <script async src="JavaScript/scroll.JS"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('f1tQ8lzc1Aku2JvoY');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('mailer').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                
+                // these IDs from the previous steps
+                emailjs.sendForm( 'service_skd1oqr','template_riynynd', this)
+                 
+                .then(function() {
+                  window.alert('Response has been submitted!');  
+                        console.log('SUCCESS!');
+                        window.alert(ss);
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        window.alert('failed'+error)
+                    });
+            });
+        }
+    </script>
+  
+    
+</head>
+<body>
+
+  <div class="cnt">
+    <div class="cover">
+      <div class="button-navi"  style="background-color: rgba(84, 81, 81, 0.267); " ><button onclick="openit()" style="background-color: transparent; border: none;"><i class="fa fa-navicon" style="font-size: 25px; color: antiquewhite; "></i></button></div>
+  
+        <div class="sidebar" id="sdbr">
+          <div class="scroll" >
+            <div class="bg_color">
+              <div class="profile_pic">
+               <img src="assets/profile_pic/m.jpg" alt="profile_picture">
+                 </div>
+              
+            </div>    
+            <div class="Name">
+                <p>Muhammad Ahsan Ali</p>
+            </div>
+          
+    
+            <div class="social_icons">
+              
+                   <div class="icon_bg"><a href="https://github.com/M-Ahsan-Ali-001" target="_blank"><img src="assets/logo_social/git.png" /></a></div>
+                   <div class="icon_bg1"><a href="https://twitter.com/Muhamma74801109" target="_blank"><img src="assets/logo_social/t.png" /></a></div>  
+                   <div class="icon_bg2"><a href="https://www.linkedin.com/in/muhamm-ahsan-ali-a4983a216" target="_blank"><img src="assets/logo_social/IN.png" /></a></div>  
+                   <div class="icon_bg3"><a href="https://www.facebook.com/profile.php?id=100006419886081" target="_blank"><img src="assets/logo_social/fac.png" /></a></div>  
+                   <div class="icon_bg4"><a href="https://www.instagram.com/iamanonymous_005/" target="_blank"><img src="assets/logo_social/inst.png" /></a></div>  
+                 
+                 
+    
+            </div> 
+            
+            <div class="menu">
+            <ul>
+               <li onclick="scroller('homee','hm')" id="hm"  style="color: #ffffff;"><i class="gg-home" style=" height: 13px; width: 18px; display:inline-block; font-size: 10px; margin-right: 15px; color: aqua;"></i>Home</li>
+               <li onclick="scroller('at','abt')" id="abt"><i class="gg-user" style="height: 14px; width: 18px; display:inline-block; font-size: 10px; margin-right: 14px; color: rgb(0, 255, 242);"></i> About</li>
+               <li onclick="scroller('rme','rdsm')" id="rdsm"><i class="gg-profile" style="height: 23px; width: 22px; display:inline-block; font-size: 10px; margin-right: 15px; color: rgb(0, 255, 242);"></i>Resume</li>
+               <li onclick="scroller('port','prt')" id="prt"><i class="gg-tab" style="height: 20px; width: 18px; display:inline-block; font-size: 10px; margin-right: 15px; color: rgb(0, 255, 242);"></i>Portfolio</li>
+               <li onclick="scroller('srv','sv')" id="sv"><i class="gg-list" style="height: 20px; width: 20px; display:inline-block; font-size: 10px; margin-right: 15px; color: rgb(0, 255, 242);"></i>Services</li>
+               <li onclick="scroller('ctn','ct')" id="ct"><i class="gg-mail" style=" display:inline-block; font-size: 10px; margin-right: 15px; color: rgb(0, 255, 242);"></i>Contact</li>
+               
+    
+    
+    
+            </ul>
+    
+            </div>
+            <div class="DWN">
+              <button class="btn-dwn"> <p><a href="assets/cv_/m_cv.pdf"  download="M_Ahsan_ALi_CV.pdf">Download CV</a></p> </button>
+    
+    
+            </div>
+    
+          </div>
+          
+          
+      
+      
+         </div>   
+     <div  class="left_body" >
+      
+          <div class="picture" id="homee">
+           
+            <div class="bg-img-clr"></div>
+  
+            <img src="assets/bg_img/main_img.jpg" />
+  
+  
+            <div class="namee"><p class="nm">Muhammad Ahsan Ali</p>
+              <div class="textt">
+             
+  
+                      <p class="bracket">{</p> <p class="dtxt">Developer</p> <p class="bracket">}</p>  I'm <span class="typer"></span> <p class="bracket">  {</p> <p class="dtxt">Developer</p> <p class="bracket">}</p>
+  
+              </div>
+            
+            </div>
+           
+     
+            
+  
+            </div>
+            <div class="tag">
+             
+               <h2 id="at">About</h2>
+        
+              <div class="bar"></div>
+              
+            </div>
+            <div class="para1">
+              <p>Hi! I'm Muhammad Ahsan Ali, I'm a Computer Science student, I love to find out about development and 
+                cultivate portable and web applications. PCs have held 
+                a deep rooted interest for me. Which began as an interest in utilizing them formed into a developing
+                 craving to comprehend how an assortment of basic thoughts and parts can cooperate to create an element as mind boggling and versatile as a PC.</p>
+            </div>
+             <div class="sub-para1">
+              Mobile & Web Developer :
+             </div>
+             <div class="about">
+                 <div class="col-1">
+                  
+                 <p class="arrow">>  <p class="opt">Occupation:</p> <p class="ans">Student</p></p>
+                <div class="rm-iln"> <p class="arrow">>  <p class="opt">Website:</p> <p class="ans">www.M_Ahsan_ALi.io</p></p></div>
+                <div class="rm-iln"> <p class="arrow">>  <p class="opt">Phone:</p> <p class="ans">(+92)-336-5306-746</p></p></div>
+                <div class="rm-iln"> <p class="arrow">>  <p class="opt">City:</p> <p class="ans">Islamabad</p></p></div>
+  
+  
+  
+  
+  
+                 </div>
+                 <div class="col-2">
+                  <div class="rm-iln"> <p class="arrow">>  <p class="opt">Country:</p> <p class="ans">Pakistan</p></p></div>
+                  <div class="rm-iln"> <p class="arrow">>  <p class="opt">Email:</p> <p class="ans">muhammadahsanali120<p class="ans">@gmail.com</p></p></p></div>
+                  <div class="rm-iln"> <p class="arrow">>  <p class="opt">Degree:</p> <p class="ans">Bachelors</p></p></div>
+                  <div class="rm-iln"> <p class="arrow">>  <p class="opt">Freelancer:</p> <p class="ans">Available</p></p></div>
+               
+  
+                 </div>
+             </div>
+             <div class="tag">
+             
+              <h2>Progress</h2>
+       
+             <div class="bar"></div>
+             
+           </div>
+    
+            <div class ="prog">
+           <div class="col-3"> <div class="counter" data-target="9"></div>+<div class="op" id="sm">Project</div></div>
+           <div class="col-3"><div class="counter" data-target="20"></div>+<div class="op" id="sm">Github Repos</div></div>
+           <div class="col-3"><div class="counter" data-target="12"></div>+<div class="op" id="sm">Progamming Languages</div></div>
+          
+           </div>
+  
+           <div class="tag">
+             
+            <h2>Skills</h2>
+     
+           <div class="bar"></div>
+           
+         </div>
+  
+         <div class="loading-bar">
+            <div class="col-4">
+  
+              <div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Python</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="90" c="10"></div>
+              </div>
+  
+  
+              
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">C++</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="70" c="10"></div>
+              </div></div>
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">C#</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="50" c="10"></div>
+              </div></div>
+  
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Java</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="65" c="10"></div>
+              </div></div>
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Dart</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="60" c="10"></div>
+              </div></div>
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">SQL</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="60" c="10"></div>
+              </div></div>
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Problem solving</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="90" c="10"></div>
+              </div></div>
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Logic Making</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="80" c="10"></div>
+              </div></div>
+              
+               
+  
+  
+            </div> 
+  
+            <div class="col-4">
+  
+              <div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Flutter</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="70" c="10"></div>
+              </div>
+  
+  
+              
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">MatLab</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="50" c="10"></div>
+              </div></div>
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">BootStrap</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="50" c="10"></div>
+              </div></div>
+  
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">HTML</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="80" c="10"></div>
+              </div></div>
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">CSS</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="75" c="10"></div>
+              </div></div>
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">PHP</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="50" c="10"></div>
+              </div></div>
+  
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Leading</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="80" c="10"></div>
+              </div></div>
+              <div style="padding-top: 20px"><div id="dataa"> <p style="margin: 0; padding: 0;  font-size: 14px; display: inline-block;  ">Programming</p> <span class="w" >10%</span></div>
+              
+              <div id="lod-bg">
+                   <div class="loder" wid="90" c="10"></div>
+              </div></div>
+  
+  
+            </div> 
+            <br><br><br><br><br>
+              
+         </div>
+         <div class="tag" >
+             
+          <h2  id="rme" >Resume</h2>
+   
+         <div class="bar"></div>
+         
+       </div>
+       <div class="rsme">
+        <div class="col-5">
+           <h3 style=" color:rgb(232, 97, 19);">Summary</h3>
+                   <div class="vb">
+            <h4>Muhammad Ahsan Ali</h4>
+            <p class="starter">
+  
+              Engaged, creative computer science student. Inquisitive,
+               energetic computer science specialist skilled in leadership, with strong foundation in
+                math, logic, and coding. Extensive knowledge of different programming languages.
+            </p>
+            <ul class="list">
+              <li>Islamabad , Pakistan.</li>
+              <li>+(92)-336-5306-746</li>
+              <li>muhammadahsanali 120@gmail.com</li>
+            </ul>
+          </div>
+          
+          <div class="col-5">
+            <h3 style=" color:rgb(232, 97, 19);">Education</h3>
+           
+            <div class="vb" style="height: auto; min-height: 400;">
+              <h4>Bachelor's of Science : BSCS</h4>
+              <div class="blocka"> <p style="padding-top: 7px; font-size: 14; color:rgb(232, 97, 19);">2020 - Present</p> </div>
+              <p class="starter">
+                Institute of Space Technology Islamabad, Islamabad Highway Toll Plaza, 1 
+                Islamabad Expressway, near Rawat 
+                Sector H DHA Phase II, Islamabad, Islamabad Capital Territory 44000.
+                Currently in 5th Semster.
+              </p>
+  
+  
+             <h4>HSSC in ICS</h4>
+              <div class="blocka"> <p style="padding-top: 7px; font-size: 14; color:rgb(232, 97, 19);;">2018 - 2020</p> </div>
+              <p class="starter">
+                Pak-Turk Marrif International Schools & Colleges, Park Link Road, Chak 
+                Shahzad, Islamabad.
+              </p>
+    
+            </div>
+          </div>
+        </div>
+        <!-- 2nd column-->
+  
+        <div class="col-5">
+          <h3 style=" color:rgb(232, 97, 19);">Professional Experience</h3>
+         
+          <div class="vb" style="height: auto; min-height: 400; ">
+            <h4>Team Lead</h4>
+            <div class="blocka"> <p style="padding-top: 7px; font-size: 14; color:rgb(232, 97, 19);">2021 - 2022</p> </div>
+            <p class="starter">
+              UI/UX LEAD, Islamabad Highway Toll 
+              Plaza, 1 Islamabad Expressway, near
+               Rawat Sector H DHA Phase II, Islamabad, Pakistan.
+            </p>
+            <ul class="list">
+              <li>Core team member of GDSC-IST.</li>
+              <li>Developed a website for GDSC-IST on Wix.com: https://gdscist101.wixsite.com/my-site</li>
+  
+                       </ul>
+  
+  
+           <h4 class="spae" >Internship at FATA House</h4>
+            <div class="blocka"> <p style="padding-top: 7px; font-size: 14; color:rgb(232, 97, 19);;">2021 - 2022</p> </div>
+            <p class="starter">
+              Intern at Fata House, G-5/1 G-5, Islamabad, Islamabad Capital Territory,Pakistan.
+             I had worked as an IT intern at FATA house for six months.
+            </p>
+  
+  
+            <h4>Graphics Desgining Course From Tevt</h4>
+            <div class="blocka"> <p style="padding-top: 7px; font-size: 14; color:rgb(232, 97, 19);;">2019</p> </div>
+            <p class="starter">
+              Graphics Desgining Course, Kohati
+              Bazar, Ferozepura Mohallah Kartar
+              Pura, Rawalpindi, Punjab 46000.
+               Awarded with Certificate for Completing Skill Summer Camp 2019.
+               
+            </p>
+           
+            
+     
+          </div>
+        </div>
+  
+  
+  
+        </div>
+        <div class="tag" style="padding-top: 80px;">
+             
+          <h2 id="port">Portfolio</h2>
+   
+         <div class="bar"></div>
+         
+       </div>
+  
+       <div class="project">
+        <div class="template">
+          <h4 class="header" >Flutter portfolio Website</h4>
+          <p class="proj-para"> A mobile responsive portfolio built on flutter 
+           ,In this project  i have used dart and flutter, 
+            this portfolio website is fully mobile adaptive and responsive, 
+            I have used different flutter extensions... </p>
+            <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/Portfolio-Flutter" target="_blank">Github --></a></button>
+  
+        </div>
+       
+        <!--project break-->
+        <div class="template">
+          <h4 class="header" >Estore Mobile APP</h4>
+          <p class="proj-para">An Estore Mobile application built on flutter and php
+             , In this project i have used  REST API for connecting the front to the
+             MS-SQL, for communication between flutter and MS-SQL i have used PHP... </p>
+            <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/Estore_Flutter_APP_using_REST_API" target="_blank">Github --></a></button>
+  
+        </div>
+      
+              <!--project break-->
+              <div class="template">
+                <h4 class="header" >Text Editor using data Structure</h4>
+                <p class="proj-para">A Text Editor using data Structures in Python,  
+                   I have made a Text Editor using data Structures in python, 
+                  I have used stack to undo and redo an operations,In this project user have different choices... </p>
+                  <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/Text-Editor-Python-using-Data-stuctures." target="_blank">Github --></a></button>
+        
+              </div>
+              <!--project break-->
+              <div class="template">
+                <h4 class="header" >C++ Automobile Rental System</h4>
+                <p class="proj-para">A C++ Automobile Rental System,
+                   I had made an Automobile Rental System using OOP programming concepts
+                  , in this project I had used abstraction, inheritance and virtual functions... </p>
+                  <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/C-OOP-based-automobile-rental-system-" target="_blank">Github --></a></button>
+        
+              </div>
+                <!--project break-->
+                <div class="template">
+                  <h4 class="header" >Assembly Language Calculator</h4>
+                  <p class="proj-para">An Assembly Language Calculator,
+                     In this project I had made an calculator using assembly language, i had also used colored mode
+                     and also designed the interface, and added different functionalist... </p>
+                    <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/Assembly-Language-Coding/blob/main/Calculator%20%20in%20Assembly%20with%20background%20color" target="_blank">Github --></a></button>
+          
+                </div>
+                    <!--project break-->
+                    <div class="template">
+                      <h4 class="header" >BootStrap Website</h4>
+                      <p class="proj-para">An Assembly Language Calculator,
+                        A Responsive Website using BootStrap 3,
+                         In this Project I had made a website using HTML, CSS, BootStrap And Javascript,
+                         this is a basic site whom I designed for practicing the Web Development... </p>
+                        <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/BootStrap-website" target="_blank">Github --></a></button>
+              
+                    </div>
+                              <!--project break-->
+                              <div class="template">
+                                <h4 class="header" >Hill Cipher Technique Encrypt/Decrypt Picture</h4>
+                                <p class="proj-para">A project That Encrypt and Decrypt Image using Hill Cipher,
+                                   In this project I have used Hill Cipher Technique, Multiple  the image Matrices
+                                  with a key matrix to Encrypt the matrix and for Decryption We use Inverse... </p>
+                                  <button class="but-gtb"> <a href="https://github.com/M-Ahsan-Ali-001/Hill-Cipher-RGB-Image-Encryption-and-Decryption-using-Matlab" target="_blank">Github --></a></button>
+                        
+                              </div>
+  
+  
+       </div>
+       <div class="tag" style="padding-top: 80px;">
+             
+        <h2 id="srv">Services</h2>
+  
+       <div class="bar"></div>
+       
+     </div>
+
+     <div class="serv">
+      <div class="row">
+        <div class="crc"><i class="gg-browser" id="gig"></i></div>
+        <h3 class="label">Develop Webites</h3>
+
+      </div>
+      <div class="row">
+        <div class="crc"><i class="gg-smartphone" id="gig"></i></i></div>
+        <h3 class="label">Develop MobileApps</h3>
+
+      </div>
+
+      <div class="row" >
+        <div class="crc"><i class="gg-screen" id="gig"></i></div>
+        <h3 class="label">Develop DesktopApps</h3>
+
+      </div>
+
+       
+
+
+     </div>
+     <div class="tag" style="padding-top: 80px;">
+             
+      <h2 id="ctn">Contact</h2>
+
+     <div class="bar"></div>
+     
+   </div>
+
+   <div class="contact">
+   <div id="g" style="display: inline-block; padding-right: 200px; padding-bottom: 50px;">
+    
+    <div style="display: inline-block;   ">
+      <div class="row-sm">
+        <i class="gg-mail" id="gig"></i>
+      </div>
+    </div>
+   
+<div id ="t" style="display: inline-block;  margin: auto; padding: 0; padding-left: 20px; ">
+
+  <h3 style="margin-top: 0px; "><br>Email:    <p style="padding: 0; margin:0; font-size: 15px; font-weight: normal;">muhammadahsanali 120@gmail.com</p></h3>
+</div>
+   </div>
+
+   <div style="display: inline-block; ">
+    
+    <div style="display: inline-block;   ">
+      <div class="row-sm">
+        <i class="gg-phone" id="gig"></i>
+      </div>
+    </div>
+   
+<div style="display: inline-block;  margin: auto; padding: 0; padding-left: 20px; padding-right: 250px; ">
+
+  <h3 style="margin-top: 0px; "><br>Phone:    <p style="padding: 0; margin:0; font-size: 15px; font-weight: normal;">(+92)-336-5306-746</p></h3>
+</div>
+   </div>
+
+  
+   </div>
+   <div class="frm">
+ 
+    <form id="mailer">
+      <label for="fname">First Name</label>
+      <input required type="text"  name="name"id="name" placeholder="Name here...">
+  
+      <label for="lname">Email</label>
+      <input type="email"    name="tname" id="tname" placeholder="Email here..." >
+  
+      <label for="country">Message</label>
+      <div class="txt">
+        <textarea required  name="message" id="message" placeholder="Write something.." style="height:200px;width: 100%; background-color: transparent;  border: 1px solid rgb(147, 90, 10); color: yellow; padding: 10px;"></textarea>
+    
+      </div>
+      <div style="max-width: 200px;  left: 20;">
+      <input type="submit" value="Send" >
+      </div>
+    </form>
+
+  </div>
+  
+        <br><br>
+        
+      </div>
+    </div>
+  
+  </div>
+
+
+
+</body>
+</html>
